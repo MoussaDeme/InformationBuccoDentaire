@@ -1,0 +1,7 @@
+{
+  "name": "bucco-dentaire",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

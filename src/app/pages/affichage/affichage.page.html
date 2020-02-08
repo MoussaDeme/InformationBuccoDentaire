@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Affichage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [ngStyle]="{'background-color': danger}">
+        le nom recu est {{nom}}
+        <ion-button ((click)="FermerPopup()")>
+        fermer le popup
+        </ion-button>
+</ion-content>

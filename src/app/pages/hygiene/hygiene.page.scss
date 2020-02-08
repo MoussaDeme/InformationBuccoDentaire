@@ -1,0 +1,30 @@
+.po
+{
+  
+  --background: url('/assets/fond3.jpg');
+} 
+.ti
+{
+    --background: rgb(220, 198, 224); 
+}
+.con
+{
+  --background: rgb(44, 25, 218);
+}
+.to
+{
+  --background: rgba(0, 0, 0, 0.5);
+}
+.ecrit
+{
+  color: white;
+  //text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  //text-align: center;
+  font-family: 'Times New Roman', Times, serif; 
+  letter-spacing: 2px;
+  
+}
+#ti
+{
+  text-align: center;
+}

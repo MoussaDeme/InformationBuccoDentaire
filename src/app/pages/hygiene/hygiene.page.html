@@ -1,0 +1,38 @@
+
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <div id="ti">
+        <ion-img src="/assets/prevention2trans.png" style="width: 50px; float: left; height: 50px;"></ion-img>
+          Bucco-dentaire
+         <ion-img src="/assets/prevention2trans.png" style="width: 50px; float: right; height: 50px;"></ion-img>
+        </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="po">
+  
+   <ion-card class="to">
+      <div *ngFor="let item of liste_article | async">
+    <ion-card *ngIf="item.type=='hygiene'">
+      <ion-card-header class="ti" (click)="item.vue = !item.vue">
+        <ion-card-title >{{item.titre}}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content class="ecrit">
+            
+         <div *ngIf="!item.vue">
+       
+         {{item.contenu }} <br> <br>
+         
+      </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  </ion-card>
+  
+   
+   
+</ion-content>

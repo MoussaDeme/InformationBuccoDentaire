@@ -1,0 +1,50 @@
+.gris
+{
+    --background: #fff;
+    color: black;
+}
+.vert
+{
+    --background: rgba(125, 202, 25, 0.884);
+}
+.po
+{
+  
+  --background: url('/assets/fond3.jpg');
+} 
+.ti
+{
+    --background: rgb(220, 198, 224); 
+}
+.con
+{
+  --background: rgb(44, 25, 218);
+}
+.to
+{
+  
+  
+    //--background: rgba(0, 0, 0, 0.5);
+    --background: rgba(0, 0, 0, 0.2);
+    
+    border: 5px solid white;
+    border-radius: 15px;
+  
+}
+.ecrit
+{
+  color: white;
+  //text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  //text-align: center;
+  font-family: 'Times New Roman', Times, serif; 
+  letter-spacing: 4px;
+  text-align: justify;
+  text-shadow: 3px 2px black;
+  font-size: 20px;
+  
+
+}
+#ti
+{
+  text-align: center;
+}

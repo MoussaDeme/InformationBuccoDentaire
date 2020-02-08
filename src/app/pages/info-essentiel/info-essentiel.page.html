@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <div id="ti">
+        <ion-img src="/assets/prevention2trans.png" style="width: 50px; float: left; height: 50px;"></ion-img>
+        {{type}}
+         <ion-img src="/assets/prevention2trans.png" style="width: 50px; float: right; height: 50px;"></ion-img>
+        </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="po">
+  
+    <ion-card class="to">
+       <div *ngFor="let item of liste_article | async; let i=index">
+
+     <ion-card *ngIf="item.type==type">
+        <ion-button  expand="block"  shape="round" [ngClass]="(i%2==0) ? 'vert' : 'gris'"    (click)="item.vue = !item.vue">
+            {{item.titre}}
+          </ion-button> <br> 
+          <!--<ion-card-header class="ti" (click)="item.vue = !item.vue">
+         <ion-card-title >{{item.titre}}</ion-card-title>
+       </ion-card-header>-->
+     
+       <ion-card-content class="ecrit">
+             
+          <div *ngIf="!item.vue">
+        
+          {{item.contenu }} <br> <br>
+          
+       </div>
+       </ion-card-content>
+     </ion-card>
+   </div>
+   </ion-card>
+   
+    
+    
+ </ion-content>

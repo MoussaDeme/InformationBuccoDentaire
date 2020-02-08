@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>soin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+       <!--contenu d'insertion-------------------->
+       <ion-input [(ngModel)]="article.titre" placeholder="titre" ></ion-input>
+       <ion-item>   
+       
+      <ion-label>
+        CONTENU
+       </ion-label>
+       
+       
+       <ion-textarea rows=7 color="primary" [(ngModel)]="article.contenu">
+             
+       </ion-textarea>
+      
+ </ion-item>
+ <!-------------bouton d'enregistrement-->
+   <ion-button (click)="onClick()">
+      enregistrer
+   </ion-button>
+
+   <!--<ion-item *ngFor="let item of liste_article | async" >
+          
+    <ion-textarea rows=7>
+       {{item.titre}}
+           {{item.contenu}}
+    </ion-textarea>
+   </ion-item>-->
+   <ion-item>
+   <ion-input placeholder="nom et prenom" [(ngModel)]="monNom">
+   </ion-input>
+          
+  </ion-item>
+  <ion-button color="primary" (click)="presenterUnPopover($event)">ouvrir un popup
+  </ion-button>
+  <ion-card class="to">
+      <ion-card  *ngFor="let item of liste_article | async">
+
+        <ion-card-header class="ti" (click)="item.vue = !item.vue">
+          <ion-card-title *ngIf="item.type=='soin'">{{item.titre}}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+              
+           <div *ngIf="!item.vue">
+         
+           {{item.contenu }} <br> <br>
+           {{item.contenu}} <br> <br>
+        </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-card>
+</ion-content>

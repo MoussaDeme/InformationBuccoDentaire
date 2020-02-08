@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar class="too">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <div id="ti">
+      <ion-img src="/assets/prevention2trans.png" style="width: 50px; float: left; height: 50px;"></ion-img>
+        Bucco-dentaire
+       <ion-img src="/assets/prevention2trans.png" style="width: 50px; float: right; height: 50px;"></ion-img>
+      </div>
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="po">
+ 
+    <div>
+    <ion-card class="welcome-card">
+      <ion-img src="/assets/imgBrosse-trans.png"></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>information</ion-card-subtitle>
+        <ion-card-title>Bucco-dentaire</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    <div id="con">
+    
+      <ion-card (click)="pushPage('essentiel')"
+        style="width: 40%; float: left; height: 250px;"
+        class="welcome-card"
+      >
+      <ion-avatar> 
+      <ion-img src="/assets/imgBrosse-trans.png" class="im"></ion-img>
+      
+    </ion-avatar>  
+    <br> <br> <br> <br> <br>  
+    <ion-card-header>
+          <ion-card-title class="tex">ESSENTIEL SUR LA SANTE</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    
+  </div>
+         <ion-card (click)="pushPage('hygiene')"
+        style="width: 40%; float: right; height: 250px;"
+        class="welcome-card"
+      >
+      <ion-avatar>
+        <ion-img src="/assets/prevention1trans.png" class="im"></ion-img>
+      </ion-avatar>
+      <br> <br> <br> <br> <br>
+
+      <ion-card-header>
+          <ion-card-title class="tex">HYGIENE DENTAIRE</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    
+      <ion-card (click)="onGoToAppareils()"
+        style="width: 44%; float: left; height: 250px;"
+        class="welcome-card"
+      >
+      <ion-avatar>
+        <ion-img src="/assets/carie1-trans.png" class="im"></ion-img>
+      </ion-avatar>
+      <br> <br> <br> <br> <br>
+      <ion-card-header>
+          <ion-card-title class="tex">MALADIE DENTAIRE</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    
+    
+      <ion-card (click)="pushPage('soin')"
+        style="width: 44%; float: right; height: 250px;"
+        class="welcome-card"
+      >
+      <ion-avatar>
+        <ion-img src="/assets/prothese-dent.jpg" class="im"></ion-img>
+      </ion-avatar>
+      <br> <br> <br> <br> <br>
+      <ion-card-header>
+          <ion-card-title  class="tex">SOIN DENTAIRE</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    
+    
+    
+    
+  </div> 
+  <!-----------------------test de open------------ 
+
+    <ion-button (click)="onGoToAppareils()"> Appareils
+
+    </ion-button> 
+
+    fin------------------------------------->
+
+</ion-content>
+ 
